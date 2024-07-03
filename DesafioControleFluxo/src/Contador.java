@@ -11,7 +11,6 @@ public class Contador {
             int parametroUm = scanner.nextInt();
  
             try {
-            	//chamando o método contendo a lógica de contagem
                 contar(parametroUm, parametroDois);
             
             }catch (Exception e) {
@@ -21,13 +20,11 @@ public class Contador {
 		
 	}
 	public static void contar(int parametroUm, int parametroDois ) throws Exception {
-		//validar se parametroUm é MAIOR que parametroDois e lançar a exceção
 		
-		int contagem = parametroDois - parametroUm;
-		//realizar o for para imprimir os números com base na variável contagem
+	    int contagem = parametroDois - parametroUm;
 	    int teste = contagem;
-        for (contagem = 1; contagem <=teste; contagem ++) {
-            System.out.println("Imprimindo o número " + contagem);     
+            for (contagem = 1; contagem <=teste; contagem ++) {
+                System.out.println("Imprimindo o número " + contagem);     
 
         }
     
